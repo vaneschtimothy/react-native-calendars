@@ -32,9 +32,11 @@ class Day extends Component {
   }
 
   onDayPress() {
+    if (this.props.marking.disabled) return;
     this.props.onPress(this.props.date);
   }
   onDayLongPress() {
+    if (this.props.marking.disabled) return;
     this.props.onLongPress(this.props.date);
   }
 
